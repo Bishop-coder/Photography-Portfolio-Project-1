@@ -1,0 +1,167 @@
+/* || General Styles */
+
+@font-face {
+    font-family: Ultra;
+    src: url(./Fonts/Ultra/Ultra-Regular.ttf) format(true-type);
+}
+
+@font-face {
+    font-family: "PT serif";
+    src: url(./Fonts/PT_Serif/PTSerif-Regular.ttf) format(true-type);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT serif";
+    src: url(./Fonts/PT_Serif/PTSerif-Bold.ttf) format(true-type);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT serif";
+    src: url(./Fonts/PT_Serif/PTSerif-Italic.ttf) format(true-type);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT serif";
+    src: url(./Fonts/PT_Serif/PTSerif-BoldItalic.ttf) format(true-type);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+h1, 
+h2, 
+p,
+a {
+    color: #140901;
+}
+
+/* || Headers & Nav */
+
+.all-head {
+    padding: 20px auto;
+    margin-top: 40px;
+}
+
+#header-h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header {
+    margin-top: -30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: auto 20px;
+    text-decoration: none;
+    font-family: "PT serif", serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    transition: all 0.15s ease 0s;
+}
+
+.nav-links li a:hover {
+    padding: 5px 10px;
+    background-color: #140901;
+    color: #DEDDDB;
+}
+
+.nav-links li a:active {
+    text-decoration: line-through;
+}
+
+.nav-links {
+    margin-right: 45px;
+}
+/* || Landing Page He */
+
+#landing {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./my_portfolio/mont_summer/summer_newer_uwu.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.land-cont {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    text-align: left;
+    transform: translate(-50%,-50%);
+}
+
+/* || Headers */
+
+h1 {
+    font-family: Ultra;
+    color: #140901;
+    z-index: 5;
+    font-size: 4rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: "PT serif", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+
+/* || Buttons */
+
+.btn {
+    font-family: "PT serif", serif;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 15px 60px;
+    margin-right: 40px;
+    width: 200px;
+    cursor: pointer;
+    border: solid 4px #140901;
+    text-decoration: none;
+    transition: 0.1s ease 0s;
+}
+
+.about {
+    padding: 20px 80px;
+}
+
+.btn:hover {
+    background-color: #140901;
+    color: #DEDDDB;
+}
+
+.btn:active {
+    text-decoration: line-through;
+}
