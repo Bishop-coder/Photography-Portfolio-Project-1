@@ -109,7 +109,7 @@ a {
 .nav-links {
     margin-right: 45px;
 }
-/* || Landing Page He */
+/* || Landing Page */
 
 #landing {
     width: 100%;
@@ -129,6 +129,16 @@ a {
     transform: translate(-50%,-50%);
 }
 
+.big-ben {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#tsp {
+    font-weight: bold;
+    margin: 15px auto 70px auto;
+}
+
 /* || Headers */
 
 h1 {
@@ -144,9 +154,7 @@ h1 {
 
 h2 {
     font-family: "PT serif", serif;
-    font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 100px;
 }
 
 /* || Buttons */
@@ -185,11 +193,10 @@ h2 {
     padding: auto 50px;
 }
 
-h2 {
+.in-text {
     color: #DEDDDB;
     font-size: 5rem;
     font-family: Ultra, serif;
-    padding-top: 60px;
 }
 
 .overlay {
@@ -202,7 +209,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: 	hsla(25, 90%, 4%, 0.80);
+    background-color: 	hsla(25, 90%, 4%, 0.60);
     flex-direction: column;
     opacity: 0;
     transition: 0.4s;
@@ -212,6 +219,12 @@ h2 {
     opacity: 1;
 }
 
+.overlay:active {
+    text-decoration: line-through;
+    color:#DEDDDB;
+    transition: none;
+}
+
 .coast {
     display: block;
     width: 90%;
@@ -219,16 +232,6 @@ h2 {
     background-size: cover;
     background-image: url(./my_portfolio/costa_rica/pool-side.jpg);
     background-position: center;
-    margin: 40px auto;
-}
-
-.farm {
-    display: block;
-    width: 90%;
-    height: 65vh;
-    background-size: cover;
-    background-image: url(./my_portfolio/johns_summer/farm-mirror.JPG);
-    background-position: 75%;
     margin: 40px auto;
 }
 
@@ -242,14 +245,16 @@ h2 {
     margin: 40px auto;
 }
 
-.sign {
+.farm {
     display: block;
-    width: 90%;
+    width: 100%;
     height: 65vh;
     background-size: cover;
-    background-image: url(./my_portfolio/mont_winter/no-parking.jpg);
-    background-position: 69%;
+    background-image: url(./my_portfolio/johns_summer/farm-mirror.JPG);
+    background-position: 75%;
     margin: 40px auto;
 }
+
+
 
 
