@@ -33,6 +33,11 @@
     font-style: italic;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body,
 html {
     margin: 0;
@@ -49,7 +54,11 @@ a {
     color: #140901;
 }
 
-/* || Headers & Nav */
+.bg-color {
+    background-color: #DEDDDB;
+}
+
+/* || Main Headers & Nav */
 
 .all-head {
     padding: 20px auto;
@@ -62,7 +71,8 @@ a {
 }
 
 .header {
-    margin-top: -30px;
+    margin-top: -20px;
+    margin-bottom: 50px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -96,10 +106,7 @@ a {
     text-decoration: line-through;
 }
 
-.nav-links {
-    margin-right: 45px;
-}
-/* || Landing Page He */
+/* || Landing Page */
 
 #landing {
     width: 100%;
@@ -119,6 +126,16 @@ a {
     transform: translate(-50%,-50%);
 }
 
+.big-ben {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#tsp {
+    font-weight: bold;
+    margin: 15px auto 70px auto;
+}
+
 /* || Headers */
 
 h1 {
@@ -129,13 +146,12 @@ h1 {
     line-height: 3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 70px;
 }
 
 h2 {
     font-family: "PT serif", serif;
-    font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 100px;
 }
 
 /* || Buttons */
@@ -154,7 +170,7 @@ h2 {
 }
 
 .about {
-    padding: 20px 80px;
+    padding: 15px 70px;
 }
 
 .btn:hover {
@@ -165,3 +181,77 @@ h2 {
 .btn:active {
     text-decoration: line-through;
 }
+
+/* || portfolio section */
+
+.ban-container {
+    position: relative;
+    width: 100%;
+    padding: auto 50px;
+}
+
+.in-text {
+    color: #DEDDDB;
+    font-size: 4 rem;
+    font-family: Ultra, serif;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 	hsla(25, 90%, 4%, 0.60);
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay:active {
+    text-decoration: line-through;
+    color:#DEDDDB;
+    transition: none;
+}
+
+.coast {
+    display: block;
+    width: 90%;
+    height: 65vh;
+    background-size: cover;
+    background-image: url(./my_portfolio/costa_rica/pool-side.jpg);
+    background-position: center;
+    margin: 40px auto;
+}
+
+.sky {
+    display: block;
+    width: 90%;
+    height: 65vh;
+    background-size: cover;
+    background-image: url(./my_portfolio/mont_summer/building.JPG);
+    background-position: 10%;
+    margin: 40px auto;
+}
+
+.farm {
+    display: block;
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-image: url(./my_portfolio/johns_summer/farm-mirror.JPG);
+    background-position: 75%;
+    margin: 40px auto;
+}
+
+
+
+
