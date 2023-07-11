@@ -66,7 +66,7 @@ a {
 }
 
 #header-h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -85,7 +85,7 @@ a {
 
 .nav-links li {
     display: inline-block;
-    margin: auto 20px;
+    margin: 10px 25px;
     text-decoration: none;
     font-family: "PT serif", serif;
     font-size: 1rem;
@@ -132,8 +132,9 @@ a {
 }
 
 #tsp {
+    font-size: 3rem;
     font-weight: bold;
-    margin: 15px auto 70px auto;
+    margin: 20px auto 90px auto;
 }
 
 /* || Headers */
@@ -142,10 +143,10 @@ h1 {
     font-family: Ultra;
     color: #140901;
     z-index: 5;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 3rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
+    text-transform: uppercase;
     line-height: 70px;
 }
 
@@ -190,10 +191,12 @@ h2 {
     padding: auto 50px;
 }
 
-.in-text {
+@media (min-width: 801px) {
+    .in-text {
     color: #DEDDDB;
-    font-size: 4 rem;
+    font-size: 7vh;
     font-family: Ultra, serif;
+    padding-bottom: 20px;
 }
 
 .overlay {
@@ -214,12 +217,6 @@ h2 {
 
 .overlay:hover {
     opacity: 1;
-}
-
-.overlay:active {
-    text-decoration: line-through;
-    color:#DEDDDB;
-    transition: none;
 }
 
 .coast {
@@ -244,14 +241,124 @@ h2 {
 
 .farm {
     display: block;
-    width: 100%;
+    width: 90%;
     height: 65vh;
     background-size: cover;
     background-image: url(./my_portfolio/johns_summer/farm-mirror.JPG);
     background-position: 75%;
     margin: 40px auto;
 }
+}
 
+@media (max-width: 800px) {
+    .in-text {
+        color: #DEDDDB;
+        font-size: 4vh;
+        font-family: Ultra, serif;
+        padding-bottom: 20px;
+    }
 
+    .overlay {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: 	hsla(25, 90%, 4%, 0.40);
+        transition: 0.5s;
+    }
 
+    .coast {
+        display: block;
+        width: 90%;
+        height: 20vh;
+        background-size: cover;
+        background-image: url(./my_portfolio/costa_rica/pool-side.jpg);
+        background-position: center;
+        margin: 40px auto;
+    }
+    
+    .sky {
+        display: block;
+        width: 90%;
+        height: 20vh;
+        background-size: cover;
+        background-image: url(./my_portfolio/mont_summer/building.JPG);
+        background-position: 10%;
+        margin: 40px auto;
+    }
+    
+    .farm {
+        display: block;
+        width: 90%;
+        height: 20vh;
+        background-size: cover;
+        background-image: url(./my_portfolio/johns_summer/farm-mirror.JPG);
+        background-position: 75%;
+        margin: 40px auto;
+    }
+}
+
+/* || Gallery General */
+
+#wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+.v-img {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.v-img-M {
+    grid-column: span 2;
+    height: 100%;
+    object-fit: cover;
+}
+
+.road-sign {
+    height: 100%;
+    object-fit: cover;
+}
+
+.h-img {
+    grid-column: span 2;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    #wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 1fr)
+    }
+    
+    .v-img {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    
+    .h-img {
+        grid-column: span 2;
+        grid-row: span 2;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
